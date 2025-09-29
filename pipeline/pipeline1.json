@@ -73,7 +73,7 @@
 							},
 							{
 								"source": {
-									"name": "status",
+									"name": "ts",
 									"type": "String",
 									"physicalType": "String"
 								},
