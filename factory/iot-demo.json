@@ -1,0 +1,9 @@
+{
+	"name": "iot-demo",
+	"location": "italynorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "596c44eb-ee37-4152-880b-ac7491f276c7",
+		"tenantId": "c2f4a85b-e02f-45ce-9c32-56f43edb55cc"
+	}
+}
