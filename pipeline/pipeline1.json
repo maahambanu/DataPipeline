@@ -38,46 +38,65 @@
 							{
 								"source": {
 									"name": "device_id",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "DeviceId",
-									"type": "String"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
 									"name": "temp_c",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Temperature",
-									"type": "Double"
+									"type": "Double",
+									"physicalType": "float"
 								}
 							},
 							{
 								"source": {
 									"name": "humidity",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "Humidity",
-									"type": "Double"
+									"type": "Double",
+									"physicalType": "float"
 								}
 							},
 							{
 								"source": {
 									"name": "ts",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
 									"name": "ReadingTime",
-									"type": "DateTime"
+									"type": "DateTime",
+									"physicalType": "datetime"
 								}
 							}
-						]
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
 					}
 				},
+				"inputs": [
+					{
+						"referenceName": "Data_Iot_Readings_Source",
+						"type": "DatasetReference"
+					}
+				],
 				"outputs": [
 					{
 						"referenceName": "Data_Iot_Readings_Sink",
