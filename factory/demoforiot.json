@@ -1,0 +1,9 @@
+{
+	"name": "demoforiot",
+	"location": "italynorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "58d33724-8ff6-41c7-b175-2f1f43c8ff85",
+		"tenantId": "c2f4a85b-e02f-45ce-9c32-56f43edb55cc"
+	}
+}
