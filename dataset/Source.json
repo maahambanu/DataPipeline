@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "iot_readings_new.csv",
-				"container": "data"
+				"folderPath": "data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
