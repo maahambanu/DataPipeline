@@ -49,6 +49,18 @@
 							},
 							{
 								"source": {
+									"name": "ts",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ReadingTime",
+									"type": "DateTimeOffset",
+									"physicalType": "datetimeoffset"
+								}
+							},
+							{
+								"source": {
 									"name": "temp_c",
 									"type": "String",
 									"physicalType": "String"
@@ -69,18 +81,6 @@
 									"name": "Humidity",
 									"type": "Double",
 									"physicalType": "float"
-								}
-							},
-							{
-								"source": {
-									"name": "ts",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ReadingTime",
-									"type": "DateTime",
-									"physicalType": "datetime"
 								}
 							}
 						],
