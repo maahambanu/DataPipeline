@@ -1,0 +1,13 @@
+{
+	"name": "APIReadings",
+	"properties": {
+		"description": "This API sends JSON object that has API Readings.",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://mpfe88f883fa14a7e6a2.free.beeceptor.com",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
