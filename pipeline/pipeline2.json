@@ -29,7 +29,49 @@
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['deviceId']"
+								},
+								"sink": {
+									"name": "DeviceId",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ts']"
+								},
+								"sink": {
+									"name": "ReadingTime",
+									"type": "DateTimeOffset"
+								}
+							},
+							{
+								"source": {
+									"path": "$['tempC']"
+								},
+								"sink": {
+									"name": "Temperature",
+									"type": "Double"
+								}
+							},
+							{
+								"source": {
+									"path": "$['humidity']"
+								},
+								"sink": {
+									"name": "Humidity",
+									"type": "Double"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
 				},
 				"inputs": [
 					{
