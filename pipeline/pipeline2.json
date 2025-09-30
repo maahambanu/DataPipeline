@@ -15,22 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "RestSource",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET",
-						"additionalHeaders": {
-							"access-control-allow-origin": "*",
-							"x-beeceptor-rule-id": "defaultpayload",
-							"content-type": "application/json",
-							"content-length": "167",
-							"vary": "Accept-Encoding"
-						},
-						"paginationRules": {
-							"supportRFC5988": "true"
-						}
-					},
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
@@ -38,12 +22,6 @@
 					},
 					"enableStaging": false
 				},
-				"inputs": [
-					{
-						"referenceName": "Source_API_Readings",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "Sink_API_Readings",
