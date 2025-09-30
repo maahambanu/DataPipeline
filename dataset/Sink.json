@@ -1,0 +1,37 @@
+{
+	"name": "Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseDemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DeviceId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Temperature",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Humidity",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ReadingTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Iot_Readings_Output"
+		}
+	}
+}

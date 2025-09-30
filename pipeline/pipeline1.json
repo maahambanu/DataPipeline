@@ -93,13 +93,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Data_Iot_Readings_Source",
+						"referenceName": "Source",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Data_Iot_Readings_Sink",
+						"referenceName": "Sink",
 						"type": "DatasetReference"
 					}
 				]

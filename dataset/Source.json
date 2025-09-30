@@ -1,0 +1,40 @@
+{
+	"name": "Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageDemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "iot_readings_new.csv",
+				"container": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "device_id",
+				"type": "String"
+			},
+			{
+				"name": "ts",
+				"type": "String"
+			},
+			{
+				"name": "temp_c",
+				"type": "String"
+			},
+			{
+				"name": "humidity",
+				"type": "String"
+			}
+		]
+	}
+}
