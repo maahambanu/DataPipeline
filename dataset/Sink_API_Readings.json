@@ -1,0 +1,36 @@
+{
+	"name": "Sink_API_Readings",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "DeviceId",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ReadingTime",
+				"type": "datetimeoffset",
+				"scale": 0
+			},
+			{
+				"name": "Temperature",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "Humidity",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ApiReadings"
+		}
+	}
+}
