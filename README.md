@@ -86,3 +86,20 @@ Using DATETIMEOFFSET avoids parsing errors on ...Z timestamps.
      - tempC → Temperature
      - humidity → Humidity
 5. Click on Trigger now to trigger the pipeline. Confirm it succeeds.
+
+### Images
+## Architecture
+![Screenshot 2025-09-30 142859](https://github.com/user-attachments/assets/f94bdacf-aaae-4146-8ebb-e8273a0b9488)
+
+## ADF Platform
+![Screenshot 2025-09-30 142455](https://github.com/user-attachments/assets/36d3cecc-e882-476a-9b9e-80103468786d)
+
+## REST API
+![Screenshot 2025-09-30 142408](https://github.com/user-attachments/assets/3b62a73b-7bf4-485d-97e7-3fe7754f38e0)
+
+## SQL Database with Written Data
+![Screenshot 2025-09-30 135851](https://github.com/user-attachments/assets/12c43ce0-01ec-4bf1-8135-eb189758314d)
+
+
+
+
